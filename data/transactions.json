@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "date": "2023-06-12",
+        "description": "Grocery Store",
+        "category": "Food & Dining",
+        "amount": -84.32,
+        "type": "expense"
+    },
+    {
+        "id": 2,
+        "date": "2023-06-11",
+        "description": "Gas Station",
+        "category": "Transportation",
+        "amount": -45.00,
+        "type": "expense"
+    },
+    {
+        "id": 3,
+        "date": "2023-06-10",
+        "description": "Salary Deposit",
+        "category": "Income",
+        "amount": 3200.00,
+        "type": "income"
+    },
+    {
+        "id": 4,
+        "date": "2023-06-09",
+        "description": "Streaming Service",
+        "category": "Entertainment",
+        "amount": -14.99,
+        "type": "expense"
+    },
+    {
+        "id": 5,
+        "date": "2023-06-08",
+        "description": "Electric Bill",
+        "category": "Utilities",
+        "amount": -124.50,
+        "type": "expense"
+    }
+]

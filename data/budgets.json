@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Groceries",
+        "category": "Food & Dining",
+        "limit": 400.00,
+        "period": "monthly",
+        "spent": 215.67,
+        "color": "#4cc9f0"
+    },
+    {
+        "id": 2,
+        "name": "Transportation",
+        "category": "Transportation",
+        "limit": 200.00,
+        "period": "monthly",
+        "spent": 187.45,
+        "color": "#f72585"
+    },
+    {
+        "id": 3,
+        "name": "Entertainment",
+        "category": "Entertainment",
+        "limit": 150.00,
+        "period": "monthly",
+        "spent": 98.32,
+        "color": "#4361ee"
+    },
+    {
+        "id": 4,
+        "name": "Utilities",
+        "category": "Utilities",
+        "limit": 300.00,
+        "period": "monthly",
+        "spent": 275.80,
+        "color": "#3f37c9"
+    }
+]

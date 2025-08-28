@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Emergency Fund",
+        "target": 5000.00,
+        "current": 2350.00,
+        "deadline": "2024-12-31",
+        "category": "savings",
+        "description": "3-6 months of living expenses",
+        "status": "on-track"
+    },
+    {
+        "id": 2,
+        "name": "Vacation to Europe",
+        "target": 3500.00,
+        "current": 1200.00,
+        "deadline": "2024-06-15",
+        "category": "major-purchase",
+        "description": "Two-week trip to Italy and France",
+        "status": "on-track"
+    },
+    {
+        "id": 3,
+        "name": "Pay Off Credit Card",
+        "target": 2500.00,
+        "current": 2500.00,
+        "deadline": "2023-09-30",
+        "category": "debt",
+        "description": "High-interest credit card debt",
+        "status": "completed"
+    }
+]

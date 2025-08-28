@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - FinAI Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                        <span>FinAI</span>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="transactions.html">Transactions</a></li>
+                            <li><a href="budgets.html">Budgets</a></li>
+                            <li><a href="reports.html" class="active">Reports</a></li>
+                            <li><a href="goals.html">Goals</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-actions">
+                        <button class="btn btn-icon"><i class="fas fa-bell"></i></button>
+                        <button class="btn btn-primary">Upgrade</button>
+                        <div class="user-profile">
+                            <div class="avatar">JD</div>
+                            <span>John Doe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="reports-page">
+            <div class="container">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>Financial Reports</h1>
+                        <p>Detailed analysis of your financial activities</p>
+                    </div>
+                    <div class="report-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-download"></i> Export Report
+                        </button>
+                    </div>
+                </div>
+
+                <div class="report-filters">
+                    <div class="filter-group">
+                        <label for="report-period">Period:</label>
+                        <select id="report-period">
+                            <option value="month">This Month</option>
+                            <option value="quarter">This Quarter</option>
+                            <option value="year">This Year</option>
+                            <option value="custom">Custom Range</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="report-category">Category:</label>
+                        <select id="report-category">
+                            <option value="all">All Categories</option>
+                            <option value="income">Income</option>
+                            <option value="expense">Expenses</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="reports-grid">
+                    <div class="report-card">
+                        <div class="report-header">
+                            <h3>Income vs Expenses</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="incomeExpenseChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-header">
+                            <h3>Spending by Category</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="categoryChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-header">
+                            <h3>Monthly Trend</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="trendChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-header">
+                            <h3>Budget Performance</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="budgetChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <h2>Financial Summary</h2>
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <div class="summary-value">$8,432.50</div>
+                            <div class="summary-label">Total Income</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-value">$5,218.75</div>
+                            <div class="summary-label">Total Expenses</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-value">$3,213.75</div>
+                            <div class="summary-label">Net Savings</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-value">38.1%</div>
+                            <div class="summary-label">Savings Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/reports.js"></script>
+</body>
+</html>
